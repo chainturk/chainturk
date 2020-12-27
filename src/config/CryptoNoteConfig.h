@@ -22,7 +22,7 @@ const uint64_t DIFFICULTY_TARGET                             = 1800; // seconds
 const uint32_t CRYPTONOTE_MAX_BLOCK_NUMBER                   = 500000000;
 const size_t   CRYPTONOTE_MAX_BLOCK_BLOB_SIZE                = 500000000;
 const size_t   CRYPTONOTE_MAX_TX_SIZE                        = 1000000000;
-const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX       = 0x31c1ce;
+const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX       = 0x28fcd3;
 const uint32_t CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW          = 10;
 const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT            = 60 * 60 * 2;
 const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT_V3         = 3 * DIFFICULTY_TARGET;
@@ -58,7 +58,7 @@ const uint64_t GENESIS_BLOCK_REWARD                          = UINT64_C(0);
 --print-genesis-tx --genesis-block-reward-address <premine wallet address>
 
 For example:
-ChainTurkd --print-genesis-tx --genesis-block-reward-address CTRCv3BDuQcUYzJXVYJungGTiVRLcUbfPKwwnaSK3bUmTkGNDQL1kNMWAwyudonfRATYz3vwkDHTTiqAjhmQDTjRYRAsvbXonW8
+ChainTurkd --print-genesis-tx --genesis-block-reward-address cTRcv3BDuQcUYzJXVYJungGTiVRLcUbfPKwwnaSK3bUmTkGNDQL1kNMWAwyudonfRATYz3vwkDHTTiqAjhmQDTjRYRAsvbXonW8
 
 * Take the hash printed, and replace it with the hash below in GENESIS_COINBASE_TX_HEX
 
@@ -101,7 +101,7 @@ const uint32_t MIXIN_LIMITS_V1_HEIGHT                        = 0;
 const uint32_t MIXIN_LIMITS_V2_HEIGHT                        = 100000;
 const uint32_t MIXIN_LIMITS_V3_HEIGHT                        = 1000000;
 
-/* The mixin to use by default with zedwallet and bytech-service */
+/* The mixin to use by default with zedwallet and chainturk-service */
 /* DEFAULT_MIXIN_V0 is the mixin used before MIXIN_LIMITS_V1_HEIGHT is started */
 const uint64_t DEFAULT_MIXIN_V0                              = 3;
 const uint64_t DEFAULT_MIXIN_V1                              = MAXIMUM_MIXIN_V1;
@@ -256,16 +256,14 @@ const uint64_t DATABASE_READ_BUFFER_MB_DEFAULT_SIZE          = 10;
 const uint32_t DATABASE_DEFAULT_MAX_OPEN_FILES               = 100;
 const uint16_t DATABASE_DEFAULT_BACKGROUND_THREADS_COUNT     = 2;
 
-const char     LATEST_VERSION_URL[]                          = "https://github.com/bytechcoin/bytechcoin/releases";
-const std::string LICENSE_URL                                = "https://github.com/bytechcoin/bytechcoin/";
+const char     LATEST_VERSION_URL[]                          = "https://github.com/chainturk/chainturk/releases";
+const std::string LICENSE_URL                                = "https://github.com/chainturk/chainturk/";
 const static   boost::uuids::uuid CRYPTONOTE_NETWORK         =
 {
     {  0xb2, 0x22, 0xc2, 0x5f, 0xeb, 0x12, 0x6c, 0x3e, 0x1d, 0xc6, 0x90, 0xe1, 0x7e, 0x55, 0xd2, 0x2a  }
 };
 
 const char* const SEED_NODES[] = {
-  "192.168.1.61:11126" //local
-  "5.39.6.152:11126", //YetkinSeed2
-  "167.86.77.96:11126", //Contabo-GER
+"192.168.1.61:11126" //local
 };
 } // CryptoNote

@@ -257,14 +257,14 @@ const uint32_t DATABASE_DEFAULT_MAX_OPEN_FILES               = 100;
 const uint16_t DATABASE_DEFAULT_BACKGROUND_THREADS_COUNT     = 2;
 
 const char     LATEST_VERSION_URL[]                          = "https://github.com/bytechcoin/bytechcoin/releases";
-const std::string LICENSE_URL                                = "https://github.com/bytechcoin/bytechcoin";
+const std::string LICENSE_URL                                = "https://github.com/bytechcoin/bytechcoin/";
 const static   boost::uuids::uuid CRYPTONOTE_NETWORK         =
 {
-    {  0xa2, 0x26, 0xb2, 0x3f, 0xef, 0x11, 0x4c, 0x33, 0x5d, 0xc8, 0x92, 0xe6, 0x7b, 0x53, 0xd2, 0x9a  }
+    {  0xb2, 0x22, 0xc2, 0x5f, 0xeb, 0x12, 0x6c, 0x3e, 0x1d, 0xc6, 0x90, 0xe1, 0x7e, 0x55, 0xd2, 0x2a  }
 };
 
 const char* const SEED_NODES[] = {
-  "178.32.178.27:11126", //YetkinSeed1
+  "192.168.1.61:11126" //local
   "5.39.6.152:11126", //YetkinSeed2
   "167.86.77.96:11126", //Contabo-GER
 };
